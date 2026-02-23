@@ -1,0 +1,45 @@
+
+body {
+    margin: 0;
+    font-family: Arial;
+    display: flex;
+}
+.sidebar {
+    width: 220px;
+    background: #6c63ff;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.sidebar a.active, .sidebar a:hover {
+    background: #574fd6;
+}
+.main {
+    flex: 1;
+    padding: 30px;
+}
+form input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+button {
+    background: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}

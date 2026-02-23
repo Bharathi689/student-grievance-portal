@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Grievances</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Student<br><span>Grievances Portal</span></h2>
+    <a href="/">Dashboard</a>
+    <a href="/submit">Submit Grievance</a>
+    <a href="/manage" class="active">Manage Grievances</a>
+</div>
+
+<div class="main">
+    <h1>All Grievances</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Ticket</th>
+            <th>Name</th>
+            <th>Dept</th>
+            <th>Year</th>
+            <th>Category</th>
+            <th>Subject</th>
+            <th>Description</th>
+        </tr>
+        {% for g in grievances %}
+        <tr>
+            <td>{{ g[0] }}</td>
+            <td>{{ g[1] }}</td>
+            <td>{{ g[2] }}</td>
+            <td>{{ g[3] }}</td>
+            <td>{{ g[4] }}</td>
+            <td>{{ g[5] }}</td>
+            <td>{{ g[6] }}</td>
+            <td>{{ g[7] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>

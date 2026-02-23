@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Grievance</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Student<br><span>Grievances Portal</span></h2>
+    <a href="/">Dashboard</a>
+    <a href="/submit" class="active">Submit Grievance</a>
+    <a href="/manage">Manage Grievances</a>
+</div>
+
+<div class="main">
+    <h1>Raise a Grievance</h1>
+
+    <form method="POST">
+        <input type="text" name="ticket" placeholder="Hall Ticket Number" required>
+        <input type="text" name="name" placeholder="Student Name" required>
+
+        <select name="department" required>
+            <option value="">Select Group</option>
+            <option>BCA</option>
+            <option>BSc</option>
+            <option>BCom</option>
+        </select>
+
+        <select name="year" required>
+            <option value="">Select Year</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+
+        <select name="category" required>
+            <option>Faculty</option>
+            <option>Exam</option>
+            <option>Infrastructure</option>
+        </select>
+
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="description" placeholder="Description" required></textarea>
+
+        <button type="submit">Submit Grievance</button>
+    </form>
+</div>
+</body>
+</html>
